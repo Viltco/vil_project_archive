@@ -1,0 +1,25 @@
+<odoo>
+    <data>
+        <record id="view_project_kanban_inherited_add_menu_role" model="ir.ui.view">
+            <field name="name">project.project.kanban.inherited</field>
+            <field name="model">project.project</field>
+            <field name="inherit_id" ref="project.view_project_kanban"/>
+            <field name="priority">24</field>
+            <field name="arch" type="xml">
+                <xpath expr="//div[hasclass('o_kanban_card_manage_section')]" position="inside">
+                    <div role="menuitem" t-if="record.active.raw_value==true">
+                        <a name="mark_archive" type="object">Archive</a>
+                    </div>
+                    <div role="menuitem" t-if="record.active.raw_value==false">
+                        <a name="mark_active" type="object">Active</a>
+                    </div>
+                </xpath>
+                <xpath expr="//field[@name='analytic_account_id']" position="after">
+                    <field name="status" invisible="1"/>
+                     <field name="active" invisible="1"/>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>
