@@ -18,6 +18,7 @@
     # any module necessary for this one to work correctly
     'depends': ['base','project'],
     'images': ['static/description/banner.png'],
+        'license': 'OPL-1',
 
     # always loaded
     'data': [
