@@ -17,6 +17,7 @@
 
     # any module necessary for this one to work correctly
     'depends': ['base','project'],
+    'images': ['static/description/banner.png'],
 
     # always loaded
     'data': [
