@@ -14,6 +14,8 @@
 
     'category': 'project',
     'version': '0.1',
+          "price":  12,
+    "currency": 'EUR',
 
     # any module necessary for this one to work correctly
     'depends': ['base','project'],
