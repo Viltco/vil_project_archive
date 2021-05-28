@@ -18,6 +18,8 @@
     # any module necessary for this one to work correctly
     'depends': ['base','project'],
     'images': ['static/description/banner.png'],
+      "price":  12,
+    "currency": 'EUR',
 
     # always loaded
     'data': [
